@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="Stye.css">
+</head>
+<body>
+    <div>
+        <!-- Program 1 -->
+        <h1>Program 1</h1>
+        <p>Program to find the length of string</p>
+        <p>I love Pakistan</p>
+        <p id="length"></p>
+
+        <hr>
+
+        <!-- Program 2 -->
+        <h1>Program 2</h1>
+        <p>Program to copy one string into another</p>
+        <p id="copied"></p>
+
+        <hr>
+
+        <!-- Program 3 -->
+        <h1>Program 3</h1>
+        <p>Program to Concatinate two strings</p>
+        <p id="resultedStr"></p>
+
+        <hr>
+
+        <!-- Program 4 -->
+        <h1>Program 4</h1>
+        <p>Program to Compare two strings.</p>
+        <p id="resultAfterComparison"></p>
+
+        <hr>
+
+        <!-- Program 5 -->
+        <h1>Program 5</h1>
+        <p>Program to Convert in uppercase.</p>
+        <p id="resultAfterConversion"></p>
+
+        <hr>
+
+        <!-- Program 6 -->
+        <h1>Program 6</h1>
+        <p>Program to Convert first letter in uppercase.</p>
+        <input type="text" placeholder="Enter text" id="txt">
+        <button onclick="firstLeterToUppercase()">Print</button>
+        <p id="resultAfterFirstLetterConversion"></p>
+
+        <hr>
+
+        <!-- Program 7 -->
+        <h1>Program 7</h1>
+        <p>Program to Capitalize Every letter.</p>
+        <input type="text" placeholder="Enter text" id="txt1">
+        <button onclick="capitalizedEveryLetter()">Print</button>
+        <p id="resultedString"></p>
+
+        <hr>
+
+        <!-- Program 8 -->
+        <h1>Program 8</h1>
+        <p>Program to convert in lowercase.</p>
+        <input type="text" placeholder="Enter text" id="txtToLowercase">
+        <button onclick="strToLowercase()">Print</button>
+        <p id="resultLowercase"></p>
+
+        <hr>
+
+        <!-- Program 9 -->
+        <h1>Program 9</h1>
+        <p>Program to toggle case of each character of a string..</p>
+        <input type="text" placeholder="Enter text" id="txtToToggle">
+        <button onclick="toggleCase()">Print</button>
+        <p id="resultOfToggle"></p>
+
+        <hr>
+
+        <!-- Program 10 -->
+        <h1>Program 10</h1>
+        <p>Program to find total number of alphabets, digits or special character in a string.</p>
+        <input type="text" placeholder="Enter text" id="totalCount">
+        <button onclick="totalCount()">Count</button>
+        <p id="resultAlpha"></p>
+        <p id="resultNum"></p>
+        <p id="resultSpecial"></p>
+
+        <hr>
+
+        <!-- Program 11 -->
+        <h1>Program 11</h1>
+        <p>program to count total number of vowels and consonants in a string.</p>
+        <input type="text" placeholder="Enter text" id="txtVowel">
+        <button onclick="CountVowelConsonent()">Count</button>
+        <p id="resultingVowel"></p>
+        <p id="resultingConsonent"></p>
+
+        <hr>
+
+        <!-- Program 12 -->
+        <h1>Program 12</h1>
+        <p>program to count total number of words.</p>
+        <input type="text" placeholder="Enter text" id="txtWords">
+        <button onclick="CountTotalNumOfWords()">Count</button>
+        <p id="numberOfWords"></p>
+
+        <hr>
+
+        <!-- Program 13 -->
+        <h1>Program 13</h1>
+        <p>program to find Reverse of a String.</p>
+        <input type="text" placeholder="Enter text" id="txtReverse">
+        <button onclick="reverseOfStr()">Reverse</button>
+        <p id="reverseStr"></p>
+
+        <hr>
+
+        <!-- Program 14 -->
+        <h1>Program 14</h1>
+        <p>program to find palindrome Strings.</p>
+        <input type="text" placeholder="Enter text" id="txtPal">
+        <button onclick="palindromeStr()">Palindrome</button>
+        <p id="palindromeStr"></p>
+
+        <hr>
+
+        <!-- Program 15 -->
+        <h1>Program 15</h1>
+        <p>program to reverse order of Words.</p>
+        <input type="text" placeholder="Enter text" id="reverseWords">
+        <button onclick="reverseWords()">Reverse Words</button>
+        <p id="reverseWordStr"></p>
+
+        <hr>
+
+        <!-- Program 16 -->
+        <h1>Program 16</h1>
+        <p>program to find first Ocurrence of a character.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter character to find its first Ocurrence" id="inputChar">
+        <button onclick="firstOccurrence()">First Occurrence</button>
+        <p id="indexOfOccur"></p>
+
+        <hr>
+
+        <!-- Program 17 -->
+        <h1>Program 17</h1>
+        <p>program to find Last Ocurrence of a character.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter character to find its last Ocurrence" id="inputCharForLast">
+        <button onclick="lastOccurrence()">Last Occurrence</button>
+        <p id="indexOfLastOccur"></p>
+
+        <hr>
+
+        <!-- Program 18 -->
+        <h1>Program 18</h1>
+        <p>program to find all Ocurrences of a character.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter character to find its all Ocurrences" id="inputCharForAll">
+        <button onclick="allOccurrence()">All Occurrence</button>
+        <p id="indexesOfAllOccur"></p>
+
+        <hr>
+
+        <!-- Program 19 -->
+        <h1>Program 19</h1>
+        <p>program to count all the occurances of a character.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter character to count its all Ocurrences" id="countCharFreq">
+        <button onclick="frequencyOfChar()">Count Frequency</button>
+        <p id="frequencyOfChar"></p>
+
+        <hr>
+
+        <!-- Program 20 -->
+        <h1>Program 20</h1>
+        <p>Program to find the frequency of each element.</p>
+        <!-- <input type="text" id="str"> -->
+        <button onclick="getFrequency()">Check Frequency</button>
+        <p id="freqOfEachChar"></p>
+
+        <hr>
+
+        <!-- Program 21 -->
+        <h1>Program 21</h1>
+        <p>Program to remove the first Occurrence of element in string.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" id="charToRemoveFromFirst">
+        <button onclick="removingFirstOccurrenceOfELe()">Remove Element</button>
+        <p id="indexOfRemoveFirst"></p>
+
+        <hr>
+
+        <!-- Program 22 -->
+        <h1>Program 22</h1>
+        <p>Program to remove the Last Occurrence of element in string.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" id="charToRemoveFromLast">
+        <button onclick="removingLastOccurrenceOfELe()">Remove Element</button>
+        <p id="indexOfRemoveLast"></p>
+
+        <hr>
+
+        <!-- Program 23 -->
+        <h1>Program 23</h1>
+        <p>program to remove all Ocurrences of a character.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter character to remove its all Ocurrences" id="inputCharToRemoveAll">
+        <button onclick="removeAllOccurrences()">Remove All Occurrence</button>
+        <p id="indexesOfAllOccurToRemove"></p>
+
+        <hr>
+
+        <!-- Program 24 -->
+        <h1>Program 24</h1>
+        <p>program to remove repeated characters in a string.</p>
+        <input type="text" placeholder="Enter The String" id="removeRepeatedChar">
+        <button onclick="toRemoveAllRepeatedChar()">Remove Repeated Characters</button>
+        <p id="removeRepeatedCharResult"></p>
+
+        <hr>
+
+        <!-- Program 25 -->
+        <h1>Program 25</h1>
+        <p>program to replace first ocurrence with another string.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter the ocurrence to replace with" id="pointString">
+        <input type="text" id="replaceString" placeholder="Replacing String">
+        <button onclick="toReplaceStringFirstOccurrence()">Replace String First Occurrence</button>
+        <p id="stringReplaceFirst"></p>
+
+        <hr>
+
+        <!-- Program 26 -->
+        <h1>Program 26</h1>
+        <p>program to replace Last ocurrence with another string.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter the ocurrence to replace with" id="pointStringLast">
+        <input type="text" id="replaceStringLast" placeholder="Replacing String">
+        <button onclick="toReplaceStringLastOccurrence()">Replace String Last Occurrence</button>
+        <p id="stringReplaceLast"></p>
+
+        <hr>
+
+        <!-- Program 27 -->
+        <h1>Program 27</h1>
+        <p>program to replace All ocurrence with another string.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" placeholder="Enter the character" id="pointStringAll">
+        <input type="text" id="replaceStringAll" placeholder="Replacing String">
+        <button onclick="replacingAllOccurrence()">Replace String All Occurrence</button>
+        <p id="stringReplaceAll"></p>
+
+        <hr>
+
+        <!-- Program 28 -->
+        <h1>Program 28</h1>
+        <p>Program to find the first specific occurrence of a word.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" id="wordOccur">
+        <button onclick="findFirstOccurrenceOfword()">Find Word First Occurrence</button>
+        <p id="indexOfWord"></p>
+
+        <hr>
+
+        <!-- Program 29 -->
+        <h1>Program 29</h1>
+        <p>Program to find the last specific occurrence of a word.</p>
+        <p>"Change the world by being yourself!"</p>
+        <input type="text" id="wordOccurLast">
+        <button onclick="findLastOccurrenceOfword()">Find Word Last Occurrence</button>
+        <p id="indexOfWordLast"></p>
+
+        <hr>
+
+        <!-- Program 30 -->
+        <h1>Program 30</h1>
+        <p>Program to find all specific occurrence of a word in a String.</p>
+        <input type="text" id="inputString" placeholder="Enter String">
+        <input type="text" id="inputWordToFind" placeholder="Enter Word">
+        <button onclick="findAllOccurrenceOfword()">Find Word All Occurrences</button>
+        <p id="wordAllOccurrence"></p>
+
+        <hr>
+
+        <!-- Program 31 -->
+        <h1>Program 31</h1>
+        <p>Program to remove first occurrence of a word in a String.</p>
+        <input type="text" id="inputStringFirstOccurRemove" placeholder="Enter String">
+        <input type="text" id="inputWordToRemoveFirst" placeholder="Enter Word">
+        <button onclick="removeFirstOccurrenceOfWord()">Remove Word First Occurrence</button>
+        <p id="wordFirstOccurrenceRemoval"></p>
+
+        <hr>
+
+        <!-- Program 32 -->
+        <h1>Program 32</h1>
+        <p>Program to remove Last occurrence of a word in a String.</p>
+        <input type="text" id="inputStringLastOccurRemove" placeholder="Enter String">
+        <input type="text" id="inputWordToRemoveLast" placeholder="Enter Word">
+        <button onclick="removeLastOccurrenceOfWord()">Remove Word Last Occurrence</button>
+        <p id="wordLastOccurrenceRemoval"></p>
+
+        <hr>
+
+        <!-- Program 33 -->
+        <h1>Program 33</h1>
+        <p>Program to remove all specific occurrence of a word in a String.</p>
+        <input type="text" id="inputStringToRemoveAll" placeholder="Enter String">
+        <input type="text" id="inputWordToRemoveAll" placeholder="Enter Word">
+        <button onclick="removeAllOccurrenceOfword()">Find Word All Occurrences</button>
+        <p id="removeWordAllOccurrence"></p>
+
+        <hr>
+
+        <!-- Object Handling Programs -->
+
+        <!-- Program1 -->
+        <h1>Object Handling Programs</h1>
+        <h1>Program 1</h1>
+        <p>JavaScript program to list the properties of a JavaScript object</p>
+        <button onclick="printObjectPrperties()">Show Object Properties</button>
+        <p id="objProperties">Result</p>
+
+        <hr>
+
+        <!-- Program 2 -->
+        <h1>Program 2</h1>
+        <p>JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.</p>
+        <button onclick="delObjProp()">Delete Object Property</button>
+        
+        <hr>
+
+        <!-- Program 3 -->
+        <h1>Program 3</h1>
+        <p>JavaScript program to Find the Length of Object.</p>
+        <button onclick="findLengthOfObj()">Object Length</button>
+        <p id="objLength"></p>
+
+        <hr>
+
+        <!-- Program 4 -->
+        <h1>Program 4</h1>
+        <p>JavaScript program to Find Book Reading Status.</p>
+        <button onclick="checkBookReadStatus()">Check Status</button>
+        <p id="bookStatus"></p>
+
+        <hr>
+
+        <!-- Program 5 -->
+        <h1>Program 5</h1>
+        <p>JavaScript program to Find Volume of Cylinder.</p>
+        <input type="number" id="height" placeholder="Enter Height">
+        <input type="number" id="radius" placeholder="Enter Radius">
+        <button onclick="calVolOfCylinder()">Calculate Volume</button>
+        <p id="cylinderVol"></p>
+
+        <hr>
+
+        <!-- Program 6 -->
+        <h1>Program 6</h1>
+        <p>Program to Bubble sort Array</p>
+        <p>[7,4,9,-4,-1,3,5,1,0]</p>
+        <button onclick="bubbleSortArray()">Sort Array</button>
+        <p id="sortedArray"></p>
+
+        <hr>
+
+        <!-- Program 7 -->
+        <h1>Program 7</h1>
+        <p>JavaScript Find Subset Of a string.</p>
+        <input type="text" id="subSetString" placeholder="Enter String">
+        <button onclick="subSetOfString()">Get Subsets</button>
+        <p id="resultingSubset"></p>
+
+        <hr>
+
+        <!-- Program 8 -->
+        <h1>Program 8</h1>
+        <p>Write a JavaScript program to create a Clock.</p>
+        <button onclick="clock()">Start Clock</button>
+
+        <hr>
+
+        <!-- Program 9 -->
+        <h1>Program 9</h1>
+        <p>Program to find the Area and Perimeter Of Circle.</p>
+        <input type="number" id="inpCircleRadius" placeholder="Enter Radius">
+        <button onclick="cal_Area_Perimeter_cicle()">Calculate</button>
+        <p id="circleRadius"></p>
+        <p id="circlePerimeter"></p>
+
+        <hr>
+
+        <!-- Program 10 -->
+        <h1>Program 10</h1>
+        <p>Program to sort Array Of Objects.</p>
+        <p>[ 
+            { <br>
+                title:  'The Road Ahead',<br>
+                author: 'Bill Gates',<br>
+                libraryID: 1254 <br>
+            },<br> 
+            {<br>
+                title: 'Walter Isaacson', <br>
+                author: 'Steve Jobs', <br>
+                libraryID: 4264 <br>
+            }, <br>
+            { <br>
+                title: 'Mockingjay: The Final Book of The Hunger Games', <br>
+                author: 'Suzanne Collins', <br>
+                libraryID: 3245 <br>
+            }]</p>
+        <button onclick="sortingArrayOfObj()">Click To Sort</button>
+
+        <hr>
+
+        <!-- Program 12 -->
+        <h1>Program 12</h1>
+        <p>Write a JavaScript function to parse an URL.</p>
+        <input type="text"  id="url">
+        <button onclick="urlParsing()">Parse URL</button>
+        <p id="parsingResult"></p>
+
+        <hr>
+
+        <!-- Program 17 -->
+        <h1>Program 17</h1>
+        <p> JavaScript function to check whether an object contains given property.</p>
+        <input type="text" id="propName" placeholder="Enter Property Name">
+        <button onclick="hasProperty()">Check Property</button>
+        <p id="propResult"></p>
+
+        <hr>
+
+        <!-- conditional operators programming exercises -->
+
+        <h1>conditional operators programming exercises</h1>
+        <!-- Program 1 -->
+        <h1>Program 1</h1>
+        <p>JS program to find Maximum between two Numbers:</p>
+        <input type="number" id="inp1" placeholder="Enter First Value">
+        <input type="number" id="inp2" placeholder="Enter Second Value">
+        <button onclick="compareNum()">Compare</button>
+        <p id="max"></p>
+
+        <hr>
+
+        <!-- Program 2 -->
+        <h1>Program 2</h1>
+        <p>JS program to find Maximum between three Numbers:</p>
+        <input type="number" id="inpForThree1" placeholder="Enter First Value">
+        <input type="number" id="inpForThree2" placeholder="Enter Second Value">
+        <input type="number" id="inpForThree3" placeholder="Enter Third Value">
+        <button onclick="compareNum3()">Compare</button>
+        <p id="max3"></p>
+
+        <hr>
+
+        <!-- Program 3 -->
+        <h1>Program 3</h1>
+        <p>JS program to find Whether Given number is Even or Odd:</p>
+        <input type="number" id="inpForCheck" placeholder="Enter Number">
+        <button onclick="checEvenOrOdd()">Check Number</button>
+        <p id="resultEO"></p>
+        
+        <hr>
+
+        <!-- Program 4 -->
+        <h1>Program 4</h1>
+        <p>Js Program to find Leap Year.</p>
+        <input type="number" id="chkLeapYear" placeholder="Enter Year">
+        <button onclick="leapYearCheck()">Check Year</button>
+        <p id="resultingYear"></p>
+
+        <hr>
+
+        <!-- Program 5 -->
+        <h1>Program 5</h1>
+        <p>Js Program to find whether Entered character is Alphabet.</p>
+        <input type="text" id="chkChar" placeholder="Enter Char">
+        <button onclick="checkChar()">Check Character</button>
+        <p id="resultingChar"></p>
+
+        <hr>
+
+        <!-- List of switch case programming exercises -->
+        <h1>List of switch case programming exercises</h1>
+        
+        <!-- Program 1 -->
+        <h1>Program 1</h1>
+        <p>js program to Print Week Day:</p>
+        <button onclick="checkWeekDay()">Check Day</button>
+        <p id="weekDay"></p>
+
+        <hr>
+
+        <!-- Program 2 -->
+        <h1>Program 2</h1>
+        <p>js program to Check Days in a Month:</p>
+        <button onclick="countNumOfDay()">Check Days</button>
+        <p id="days"></p>
+
+        <hr>
+
+        <!-- Program 3 -->
+        <h1>Program 3</h1>
+        <p>js program to check Character whether Consonent or Vowel:</p>
+        <input type="text" id="inpCheckAO" placeholder="Enter Character">
+        <button onclick="checkingAlphabet()">Check Char</button>
+        <p id="checkCharAO"></p>
+
+        <hr>
+
+        <!-- Program 4 -->
+        <h1>Program 4</h1>
+        <p>js program to find Maximum Between Two Number Using Switch Case:</p>
+        <input type="number" id="inpSwitch1" placeholder="Enter First Value">
+        <input type="number" id="inpSwitch2" placeholder="Enter Second Value">
+        <button onclick="compareNumSwitch()">Compare</button>
+        <p id="maxSwitch"></p>
+
+        <hr>
+
+        <!-- Program 5 -->
+        <h1>Program 5</h1>
+        <p>js program to check even Odd number using Switch case:</p>
+        <input type="number" id="sInp3" placeholder="Enter Number">
+        <button onclick="Even_OddS()">Check</button>
+        <p id="evenOddS"></p>
+
+        <hr>
+
+        <!-- Program 6 -->
+        <h1>Program 6</h1>
+        <p>js  program to check whether a number is positive, negative or zero using switch case.:</p>
+        <input type="number" id="sInp4" placeholder="Enter Number">
+        <button onclick="checkNumS()">Check</button>
+        <p id="checkingNumS"></p>
+
+        <hr>
+        
+        <!-- Program 7 -->
+        <h1>Program 7</h1>
+        <p>JS program to find roots of a quadratic equation using switch case.</p>
+        <input type="number" placeholder="Enter a" id="numOneS">
+        <input type="number" placeholder="Enter b" id="numTwoS">
+        <input type="number" placeholder="Enter c" id="numThreeS">
+        <button onclick="quadraticRoots()">Check Roots</button>
+        <p id="rootsAre"></p>
+
+        <hr>
+
+        <!-- Program 8 -->
+        <h1>Program 8</h1>
+        <p>Simple Calculator Using switch:</p>
+        <input type="number" id="inpCalS1" placeholder="Enter First Value">
+        <input type="text"  id="operatorS" placeholder="Enter Operator">
+        <input type="number" id="inpCalS2" placeholder="Enter Second Value">
+        <button onclick="calculatorS()">Calculate</button>
+        <p id="resultS"></p>
+
+     </div>   
+    <script src="Script.js"></script>
+</body>
+</html>
